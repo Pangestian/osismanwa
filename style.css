@@ -1,0 +1,321 @@
+/* Mobile */
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        max-height: 15vh;
+        display: flex;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        padding: 8px 0;
+        overflow-x: hidden; /* ⬅ cegah keluar layar */
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 4px;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        overflow-x: auto;   /* ⬅ kalau kepanjangan bisa di-scroll */
+        white-space: nowrap;
+    }
+
+    .navbar ul li a {
+        margin: 0;
+        text-decoration: none;
+        padding: 10px 10px;   /* ⬅ kecilin padding */
+        display: block;
+        color: black;
+        font-size: 16px;      /* ⬅ kecilin font */
+        white-space: nowrap;
+    }
+    
+    .hero .hero-left img {
+        padding-top: 15%;
+        padding-left: 15%;
+        width: 25vw;
+        height: auto;
+    }
+    
+    .hero-right {
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .hero-right img {
+        width: 25vw;
+        height: auto;
+        display: block;
+    }
+
+    .hero-left h1 {
+        display: flex;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        text-shadow: 4px 4px 6px rgb(0, 0, 0);
+        padding-bottom: 20px;
+        font-size: clamp(1.8rem, 10vw, 5rem);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .hero-left p {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    .visi {
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+        color: rgb(128, 128, 128);
+        padding-right: 150px;
+        padding-left: 50px;
+        animation: fade-in-slide-up 2s linear forwards;
+    }
+
+    .misi {
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+        color: rgb(128, 128, 128);
+        padding-right: 50px;
+        animation: fade-in-slide-up 2s linear forwards;
+    }
+
+    #landpage-1 {
+        color: black;
+        height: 100vh;
+        background-color: rgb(240, 240, 240);
+        box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #landpage-2 {
+        color: black;
+        font-size: 20px;
+        padding-top: 20vh;
+        padding-right: 14px;
+        padding-left: 14px;
+        text-align: left;
+        min-height: 100vh;
+        background: white;
+        display: flex;
+    }
+
+    #landpage-3 {
+        color: black;
+        height: 100vh;
+        background-color: rgb(38, 38, 38);
+        box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #landpage-3 h1 {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+        font-style: normal;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    #landpage-3 iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li a {
+        margin: 0;
+        text-decoration: none;
+        text-align: 0;
+        padding: 15px 15px;
+        display: block;
+        color: black;
+        font-size: 25px;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        display: flex;
+        gap: 3px;
+    }
+
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        max-height: 15vh;
+        display: flex;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .visi p {
+        padding-top: 20px;
+    }
+
+    .misi p {
+        padding-top: 20px;
+    }
+
+    .visi {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: rgb(128, 128, 128);
+        padding-right: 150px;
+        padding-left: 50px;
+        animation: fade-in-slide-up 2s linear forwards;
+    }
+
+    .misi {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: rgb(128, 128, 128);
+        padding-right: 50px;
+        animation: fade-in-slide-up 2s linear forwards;
+    }
+
+    .hero {
+        padding: 0 50px;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+
+    .hero-left h1 {
+        color: rgb(255, 255, 255);
+        text-shadow: 4px 4px 6px rgb(0, 0, 0);
+        padding-bottom: 20px;
+        font-size: clamp(1.8rem, 10vw, 5rem);
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .hero .hero-left img {
+        padding-top: 15%;
+        padding-left: 15%;
+        width: 9vw;
+        height: auto;
+    }
+
+    .hero-left p {
+        margin-top: 20px;
+        padding: 10px 10px;
+    }
+
+    .hero-right {
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .hero-right img {
+        width: 18vw;
+        height: auto;
+        display: block;
+    }
+
+
+    #landpage-1 {
+        color: black;
+        height: 100vh;
+        background-color: rgb(240, 240, 240);
+        box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #landpage-2 {
+        color: black;
+        font-size: 20px;
+        padding-top: 20vh;
+        padding-right: 15px;
+        padding-left: 15px;
+        text-align: left;
+        min-height: 100vh;
+        background: white;
+        display: flex;
+    }
+
+    #landpage-3 {
+        color: black;
+        height: 100vh;
+        background-color: rgb(38, 38, 38);
+        box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #landpage-3 h1 {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-size: 100px;
+        font-style: normal;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+
+    #landpage-3 iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@keyframes fade-in-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
